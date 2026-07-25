@@ -10,5 +10,6 @@
       "src": "/(.*)",
       "dest": "backlot/server.py"
     }
-  ]
+  ],
+  "installCommand": "pip install -r requirements.txt"
 }
