@@ -1,15 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "backlot/server.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.12"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "backlot/server.py"
-    }
-  ],
-  "installCommand": "pip install -r ./requirements.txt"
+  }
 }
